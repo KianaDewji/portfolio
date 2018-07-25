@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+
+		.collapsible {
+  background-color: LavenderBlush;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+		.content {
+	    padding: 0 18px;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition:max-height 0.2s ease-out;
+		}
+		#image_1{
+			width: 100%;
+			height: auto;
+		 	padding: 0px;
+		}
+		h1{color:Aqua; font-size:75px}
+		h2{color:Aqua; font-size:50px}
+		h3{color:black; font-size:35px}
+		.facts{
+			font-size: 25px;
+		}
+		.box{
+			position:absolute;
+			left: 225px;
+			width: 450px;
+			height: 200px;
+			background-color: LavenderBlush;
+		}
+		.box1{
+			position:absolute;
+			left: 100px;
+			top: 1900px;
+			width: 450px;
+			height: 100px;
+			background-color: LavenderBlush;
+		}
+		.box2{
+			position:absolute;
+			left: 700px;
+			top: 300px;
+			width: 450px;
+			height: 100px;
+			color: white;
+			font-size: 30px;
+			font-style: oblique;
+		}
+		</style>
+	</head>
+
+	<body style="background-color:Azure;">
+		<img src="22788710_161028214485563_3733244229558929618_n.jpg" id="image_1">
+		<h1 style="text-align:center;">Kiana Dewji</h1>
+		<h2 style="text-align:center;">The Official Website</h2>
+		<div class = "box2">
+			<strong>Driven by a passion for music, business, and computer science, I aspire to impact the world using a combination of those fields. In this website, you will find my music channels and Gifted, a non-profit meant to ...</strong>
+		</div>
+		<button class="collapsible"><strong>About Me</strong></button>
+			<div class="content">
+				Born: July 5, 2002 (age 16), Johannesburg, South Africa
+				<div>
+				</div>
+				Nationality: Canadian
+				<div>
+				</div>
+				Siblings: Aleena Dewji, Irfan Dewji
+				<div>
+				</div>
+				Parents: Salim Dewji, Shereen Dewji
+				<div>
+				</div>
+				Currently studying at The Hockaday School
+			</div>
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var content = this.nextElementSibling;
+			    if (content.style.maxHeight){
+			      content.style.maxHeight = null;
+			    } else {
+			      content.style.maxHeight = content.scrollHeight + "px";
+			    }
+			  });
+			}
+		</script>
+		<h3>About Me</h3>
+			<div class = "box">
+			<body style=font-size:25px;>
+		</div>
+				<img src="FullSizeRender-1-1-e1511146535537-210x300.jpg">
+		<div>
+			<style>
+			h4{color:black; font-size:35px}
+			</style>
+			<h4>Music</h4>
+			<div>
+			</div>
+			<div class= "facts">
+				<a href="https://www.youtube.com/channel/UC1WNRt6mYyKaqLSOMv817Eg">Youtube Channel</a>
+				<div>
+				</div>
+				<a href="https://www.instagram.com/kianadewjimusic/">Instagram Music Account</a>
+		</div>
+		<div>
+			<h4>Social Media</h4>
+			<div>
+			</div>
+			<div class= "facts">
+			<img src="252967863007212.png" style="width:350px;height:350px;">
+			<div class= "box1">
+				Facebook: @KianaDewji
+				<div>
+				</div>
+				Instagram: @kianadewji
+				<div>
+				</div>
+				Snapchat: @kianadewji
+				<div>
+				</div>
+			</div>
+	</body>
+
+
+</html>
