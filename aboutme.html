@@ -26,6 +26,17 @@
   outline: none;
   font-size: 15px;
 }
+		.collapsible2 {
+  background-color: LavenderBlush;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 		.content {
 	    padding: 0 18px;
 	    background-color: white;
@@ -111,14 +122,28 @@
 			<style>
 			h4{color:black; font-size:35px}
 			</style>
-			<h4>Music</h4>
-			<div>
-			</div>
+		<button class="collapsible2"><strong>Music</strong></button>
 			<div class= "facts">
 				<a href="https://www.youtube.com/channel/UC1WNRt6mYyKaqLSOMv817Eg">Youtube Channel</a>
 				<div>
 				</div>
 				<a href="https://www.instagram.com/kianadewjimusic/">Instagram Music Account</a>
+			<script>
+			var coll = document.getElementsByClassName("collapsible2");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var content = this.nextElementSibling;
+			    if (content.style.maxHeight){
+			      content.style.maxHeight = null;
+			    } else {
+			      content.style.maxHeight = content.scrollHeight + "px";
+			    }
+			  });
+			}
+		</script>
 		</div>
 		<button class="collapsible1"><strong>Social Media</strong></button>
 			<div class="content">
